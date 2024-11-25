@@ -1,0 +1,41 @@
+Interpretação Item A :
+Esses números indicam que, em cinco momentos consecutivos (ou em cinco locais, dependendo do contexto), o sensor de temperatura registrou as medições listadas.
+Por exemplo, a primeira coluna da matriz indica que a temperatura registrada no primeiro momento foi 22°C, a segunda coluna indica 25°C, e assim por diante.
+
+Item B: 
+Média = (45+38+42+40+37)/5 = 40,4 
+
+Item C: 
+A concentração de CO2 atingiu o valor máximo de 420 ppm no terceiro momento.
+
+Item D: 
+int ambientData[3][5] = {
+    {22, 25, 23, 21, 24},  
+    {45, 38, 42, 40, 37}, 
+    {400, 380, 420, 410, 390} 
+};
+
+void setup() {
+    int totalLocais = 3;
+    int totalLeituras = 5;
+    int somaTemperaturas = 0;
+
+    
+    for (int j = 0; j < totalLeituras; j++) {
+        somaTemperaturas += ambientData[0][j];
+    }
+
+   
+    float mediaTemperaturas = somaTemperaturas / (float)totalLeituras;
+
+    
+}
+
+void loop() {
+    
+}
+
+​
+ 
+
+
